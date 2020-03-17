@@ -33,6 +33,27 @@
   background-color: yellow;
 }
 
+/* UTILITY */
+
+.vanilla-list{
+  list-style: none;
+}
+
+.inline-list li{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.inline-list li a{
+  text-decoration: none;
+  color: white;
+}
+
+.block{
+  display: block;
+}
+
 
 #main-container{
   height: 100vh;
@@ -42,10 +63,14 @@
   align-items: center;
 }
 
+/* BEGIN TOP BAR */
 #top-bar{
+  width: 100%;
 }
 
-/* CONTENT */
+/* END TOP BAR */
+
+/* BEGIN CONTENT */
 #main-user{
   display: flex;
   width: 1600px;
@@ -53,6 +78,7 @@
   flex-grow: 1;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 6px 0;
 }
 
 #main-user .user{
@@ -78,10 +104,62 @@
   border: 2px solid white;
 }
 
-
-
-
-
-
-#cta{
+#main-user .user .icon{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 2px 0 0;
 }
+
+/* END CONTENT */
+
+/* BEGIN CALL TO ACTION */
+#cta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #232326;
+  width: 100%;
+  color: white;
+  font-size: 10px;
+}
+
+#cta li{
+  padding: 6px 0 10px 15px;
+  text-align: center;
+}
+
+#cta i{
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+#cta .left-cta{}
+
+#cta .center-cta ul li:nth-child(3){
+  padding-left: 8px;
+}
+
+#cta .center-cta ul li:nth-child(4){
+  padding-right: 20px;
+  padding-left: 15px;
+}
+
+#cta .right-cta a{
+  text-decoration: none;
+  color: red;
+  padding-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+/* END CALL TO ACTION */
