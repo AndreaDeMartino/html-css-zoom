@@ -14,6 +14,7 @@ i:hover{
 }
 /* DEBUG:  */
 
+
 .red{
   background-color: red;
 }
@@ -123,6 +124,15 @@ i:hover{
   border: 2px solid yellow;
 }
 
+#main-user .user.active img:hover{
+  content: url('../assets/400.jpeg');
+}
+
+#main-user .user:active img{
+  position: relative;
+}
+
+
 #main-user .user img{
   position: absolute;
   top: 0;
@@ -144,6 +154,9 @@ i:hover{
   border-radius: 0 2px 0 0;
 }
 
+#main-user .user.active .icon{
+  opacity: 0;
+}
 /* END CONTENT */
 
 /* BEGIN CALL TO ACTION */
