@@ -12,36 +12,8 @@ a:hover,
 i:hover{
   color: red;
 }
-/* DEBUG:  */
-
-
-.red{
-  background-color: red;
-}
-
-.blue{
-  background-color: blue;
-
-}
-
-.green{
-  background-color: green;
-}
-
-.pink{
-  background-color: pink;
-}
-
-.grey{
-  background-color: grey;
-}
-
-.yellow{
-  background-color: yellow;
-}
 
 /* UTILITY */
-
 .vanilla-list{
   list-style: none;
 }
@@ -61,7 +33,7 @@ i:hover{
   display: block;
 }
 
-
+/* MAIN CONTAINER */
 #main-container{
   height: 100vh;
   background-color: black;
@@ -100,10 +72,9 @@ i:hover{
   padding: 3px;
   border-radius: 3px;
 }
-
 /* END TOP BAR */
 
-/* BEGIN CONTENT */
+/* BEGIN MAIN USER */
 #main-user{
   display: flex;
   width: 1600px;
@@ -132,7 +103,6 @@ i:hover{
   position: relative;
 }
 
-
 #main-user .user img{
   position: absolute;
   top: 0;
@@ -157,7 +127,7 @@ i:hover{
 #main-user .user.active .icon{
   opacity: 0;
 }
-/* END CONTENT */
+/* END MAIN USER */
 
 /* BEGIN CALL TO ACTION */
 #cta{
@@ -178,8 +148,6 @@ i:hover{
   padding-bottom: 4px;
 }
 
-#cta .left-cta{}
-
 #cta .center-cta ul li:nth-child(3){
   padding-left: 8px;
 }
@@ -194,14 +162,4 @@ i:hover{
   color: red;
   padding-right: 6px;
 }
-
-
-
-
-
-
-
-
-
-
 /* END CALL TO ACTION */
